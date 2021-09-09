@@ -11,36 +11,42 @@
 
 <body>
     <header>
-        <nav class="nav">
-            <img src="images/shoottxt.webp" alt="the simpsons">
-            <a class="nav" href="contact.html">Shoot me a message!</a>
-            <hr>
-            <img src="images/dave.webp" alt="Dave Chappelle">
-            <a href="index.html">About ME </a>
-            <hr>
-            <img src="images/sam.webp" alt="Pulp Fiction">
+        <h1><b>Find Your Way Around!</b></h1>
 
-            <a href="file:///C:/Users/Administrator/Desktop/code/Basic-HTML-Page2/projects.html">Bio!</a>
-            <hr>
 
-        </nav>
     </header>
+    <nav class="nav">
+        <img src="images/shoottxt.webp" alt="the simpsons">
+        <a class="nav" href="contact.html">Shoot me a message!</a>
+        <img src="images/dave.webp" alt="Dave Chappelle">
+        <a href="index.html">About ME </a>
+        <img src="images/sam.webp" alt="Pulp Fiction">
+        <a href="file:///C:/Users/Administrator/Desktop/code/Basic-HTML-Page2/projects.html">Bio!</a>
+
+
+    </nav>
+    <hr>
+
+
     <main>
         <form id="formation" action="https://devtec11.github.io/Basic-HTML-Page2/forms.html" method="GET">
 
             <h2>Your Basic Info!</h2>
             <label for="name">Name</label>
             <br>
-            <input type="text" id="Name" placeholder="Name">
+            <input type="text" name="Name">
             <br>
             <label for="Email">Email</label>
-            <input type="Email" id="Email" placeholder="Email">
+            <br>
+            <input type="Email" name="Email">
             <br>
             <label for="Password">Password</label>
-            <input type="Password" id="Password" palceholder="Password" required>
             <br>
-            <label for="telephone">Enter you phone number</label>
-            <input type="telephone" id="telephone" placeholder="telephone">
+            <input type="Password" name="Password" required>
+            <br>
+            <label for="telephone">Enter your phone number</label>
+            <br>
+            <input type="telephone" name="telephone" placeholder="telephone">
             <br>
             <h4>Age</h4>
             <label for="radio">Under 16</label>
@@ -49,23 +55,40 @@
             <label for="radio">Over 16</label>
             <input type="radio" id="Over16" name="Over16" value="Over16">
             <br>
-            <label for="radio">Engineering</label>
-            <input type="radio" id="Engineering" name="Engineering" value="Engineering">
-            <input type="submit" id="submit" value="SUBMIT">
-            <!--this is where the form ends-->
+            <h2>Your Profile</h2>
+            <label for="Biography">Biography</label>
+            <br>
+            <textarea name="Biography" rows="4" cols="24"></textarea>
+            <br>
+            <label for="Select Courses">Select Courses</label>
+            <br>
+            <select name="Select Courses">
+                <optgroup label="Engineer">Engineer</optgroup>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Mathmatical Engineering">Mathmatical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <optgroup label="Management">Management</optgroup>
+                <option value="Technology Management">Technology Management</option>
+                <option value="Business Management">Business Management</option>
+                <option value="Office Management">Office Management</option>
+                <option value="Finance Management">Fianance Management</option>
+            </select>
+            <br>
+            <label>Interests</label>
+            <br>
+            <input type="checkbox" name="Engineering" value="Engineering">
+            <label for="Engineering">Engineering</label>
+            <br>
+            <input type="checkbox" name="Business" value="Business">
+            <label for="Business">Business</label>
+            <br>
+            <input type="checkbox" name="Law" value="Law">
+            <label for="Law">Law</label>
+            <br>
+            <input type="submit" name="submit" value="SUBMIT">
+
         </form>
-
-
-
-
-
-
-
-
-
-
-
-
 
     </main>
 
